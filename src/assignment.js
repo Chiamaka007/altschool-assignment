@@ -21,11 +21,12 @@ function sumOfNumbers(arrayOfNumbers) {
   for(i=0; i<arrayOfNumbers.length; i++) {
     sum += arrayOfNumbers[i]
   }
-    return sum;
+   
+    return (arrayOfNumbers.length, sum);
    
 }
 console.log(sumOfNumbers([10, 20, 30]))
-// assignment.sumOfNumbers = sumOfNumbers;
+
 /**
  * Challenge - 2
  * 
@@ -42,11 +43,11 @@ function countEvenNumbers(arrayOfNumbers) {
     if(arrayOfNumbers[i] % 2 === 0) {
       count += 1
     }  }
-    return count;
+    return (arrayOfNumbers.length, count);
 }
 console.log(countEvenNumbers([1,2,3,4,5,6]))
 
-// assignment.countEvenNumbers = countEvenNumbers;
+
 /**
  * Challenge - 3
  * 
@@ -69,10 +70,10 @@ function celsiusToFahrenheit(arrayOfNumbers) {
     conv = (arrayOfNumbers[i] * 1.8) + 32
     fahArr.push(Math.trunc(conv))
   }
-    return fahArr;
+    return (arrayOfNumbers, fahArr);
 }
 console.log(celsiusToFahrenheit([100, 12, 34, 35]))
-// assignment.celsiusToFahrenheit = celsiusToFahrenheit;
+
 
 
 // ========================
